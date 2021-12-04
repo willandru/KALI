@@ -7,6 +7,7 @@
     <title>KALI LINUX:: COMANDS</title>
 </head>
 <body>
+    <div style="background-color: dodgerblue;">
     <header><h1 style="background-color: black;
      color: blanchedalmond;">🦁APRENDIENDO COMANDOS BASICOS EN KALI LINUX🦁</h1></header>
 
@@ -14,6 +15,8 @@
         <hr>
         <h1 style="background-color: black; color:
          blanchedalmond;">¿Qué que aprenderemos:🦂 💻💻?</h1>
+        </div>
+         <div style="background-color: darkgray;">
         <h2 style="background-color: black; color:
          green;">USUARIOS & PRIVILEGIOS</h2>
          <ul>
@@ -79,7 +82,7 @@
         </h3>
 
         TENEMOS VARIAS OPCIONES:
-        <h3> chmod 777 permisos.txt
+        <h3> ⤭ chmod 777 permisos.txt
         </h3>
         Que le otorga permisos completos al archivo y su nombre cambia de color
         <img src="imgs/777.png" alt="Permisos 777">
@@ -90,6 +93,67 @@
          <hr>
          <h1 style="background-color: black; color:
          blue;"><b>🍁 adduser</b></h1>
+         COn esta funcion podremos crear un nuevo usuario en nuestro computaador, basicmaente ingresamos el comando
+         y os pide el nombre del nuevo usuario, contraseña y mas datos generales
+         <h3> ⤭ adduser kalijhon
+        </h3>
+
+        Ademas existe un archivo muy importante en en /etc/ llamado "passwd", en el pasado contenia las contraseñas¡
+        de los usuarios, hoy en día sirve para obtener informacion importante sobre los usuarios de la maquina y el nombre de usuario
+
+        <img src="imgs/etc_passwd.png" alt="etc_passwd">
+
+        Sin embargo, existe otro archivo llamado shadow, en el mismo folder /etc/, el cual SI contiene las contraseñas¡
+        de los usuarios en formato HASHING, las cuales se pueden descifrar utilizando herramientas como 
+        HASHCAT, etc, you can hash the passwords here¡
+
+        <img src="imgs/etc_shadow.png" alt="">
+
+
+        <hr>
+        <h1 style="background-color: black; color:
+        blue;"><b>🍁 su :: sudo</b></h1>
+
+        Muchas veces tenemos un usuario distinto a root, el cual no va a tener todos los permisos que troor tiene
+        y apesar de que podamos hacer uso de <b><i>sudo</i></b> para otorgar permisos a ciertos comandos, muchas vees
+        nos encontraremos con el mensaje de que no tenemos suficientes PRIVILEGIOS.
+
+        PAra eso, necesitas tener al usuario en el <b><i>sudoers file</i></b>, un archivo tambien util en pentesting.
+    </div>
+        
+    <div style="background-color: greenyellow;">
+
+
+        <h2 style="background-color: black; color:
+        green;">NETWORK COMMANDS</h2>
+        <ul>
+            <li>
+                ifconfig
+            </li>
+            <li>
+               iwconfig
+           </li>
+           <li>
+               ping
+           </li>
+           <li>
+               netstat
+           </li>
+           <li>
+                route
+            </li>
+        </ul>
+
+        <h1 style="background-color: black; color:
+        blue;"><b>🍁 ifconfig</b></h1>
+        <!-- <img src="imgs/ls_la.png" alt="ls -la command"> -->
+
+        <p>
+           :: 
+        </p>
+
+    </div>
+
     </main>
 </body>
 </html>
