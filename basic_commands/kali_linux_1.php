@@ -1,5 +1,5 @@
-COMANDOS QUE APRENDEREMOS::
 ~~~~~~~~~~~~~~~~~~~~~
+COMANDOS QUE APRENDEREMOS::
 pwd
 cd
 ls
@@ -8,9 +8,14 @@ cd, rm, mv, locate
 updatedb
 passwd
 man
-~~~~~~~~~~~~~~~~~~
+::
 
 paswwd --> change root password
 
 man ls
 ls --help
+~~~~~~~~~~~~~~~~~~
+
+USUARIOS & PRIVILEGIOS::
+
+ls -la : 

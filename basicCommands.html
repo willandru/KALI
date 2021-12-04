@@ -8,12 +8,12 @@
 </head>
 <body>
     <header><h1 style="background-color: black;
-     color: blanchedalmond;">APRENDIENDO COMANDOS BASICOS EN KALI LINUX</h1></header>
+     color: blanchedalmond;">🦁APRENDIENDO COMANDOS BASICOS EN KALI LINUX🦁</h1></header>
 
     <main>
         <hr>
         <h1 style="background-color: black; color:
-         blanchedalmond;">¿Qué que aprenderemos:?</h1>
+         blanchedalmond;">¿Qué que aprenderemos:🦂 💻💻?</h1>
         <h2 style="background-color: black; color:
          green;">USUARIOS & PRIVILEGIOS</h2>
          <ul>
@@ -33,6 +33,64 @@
                  sudo
              </li>
          </ul>
+
+         <h1 style="background-color: black; color:
+         blue;"><b>🍁 chmod</b></h1>
+         <img src="imgs/ls_la.png" alt="ls -la command">
+
+         <p>
+            :: Entonces, si miramos a la primera linea y vemos un dash "<b>-</b>" , significa   que el archivo
+            es un "file", si por el contrario lo primero que aparece es una "<b>D</b>", significa que es un 
+            "Directorio". 
+         </p>
+         <p>
+             Luego tenemos las letras r, w, x
+             <ul>
+                 <li>Read</li>
+                 <li>Write</li>
+                 <li>Execute</li>
+             </ul>
+         </p>
+
+         <p>Sin embargo, tenemos 3 grupos diferentes de usuarios
+            <ul>
+                <li>Primer usuario: EL propietario del archivo || The owner of the file</li>
+                <li>Segundo usuario: Los usuarios que poseen el archivo </li>
+                <li>Tercer usuario: Todos los usuarios en general </li>
+            </ul>
+
+         </p>
+
+         <p style="background-color: cadetblue;">
+            ::Cuando hacemos penetrationi testing, usualmente vamos a estar buscando tener 
+            acceso completo al archivo o carpeta de interes. Ahor, tipicamente estaremos mirando 
+            en este folder llamado /temp/ y mirrar que tipo de permisos tienen este folder, ya que 
+            cuando estemos haciendo algun tipo de exploit, vamos a querer guardar nuestros scripts
+             en este folder , pues es aquí donde prodremos ejecturar esos archivos..
+
+         </p>
+
+         <h2>¿Como otorgamos Permisos a un <i>"file"</i> ?</h2>
+         Para eso , crearemos un archivo y le cambiaremos sus permisos, creaodlo así:
+         # echo > "hello " > permisos.txt y lo podemos ver en la siguiente imagen:
+         <img src="imgs/otorgando.png" alt="Otorgando permisos a un file 1">
+         Podemos ver que por defecto los permisos del archivo son :
+         <h3>-rw-r--r-- 1 kaliw kaliw    1 Dec  4 09:51  permisos.txt
+        </h3>
+
+        TENEMOS VARIAS OPCIONES:
+        <h3> chmod 777 permisos.txt
+        </h3>
+        Que le otorga permisos completos al archivo y su nombre cambia de color
+        <img src="imgs/777.png" alt="Permisos 777">
+
+        Los numeros que tienen tods los archivos 1,2,3,4 ... se refierne más a
+         configuracion y seguridad de los archivos
+
+         <hr>
+         <h1 style="background-color: black; color:
+         blue;"><b>🍁 adduser</b></h1>
     </main>
 </body>
 </html>
+
