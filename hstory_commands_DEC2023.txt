@@ -1,0 +1,294 @@
+    1  shutdown
+    2  poweroff
+    3  sudo poweroff
+    4  sudo leafpad /etc/default/grub
+    5  sudo update-grub
+    6  reboot
+    7  sudo apt update && sudo apt full-upgrade
+    8  sudo leafpad /etc/default/grub
+    9  leafpad
+   10  sudo apt remove gstreamer*
+   11  sudo update-grub
+   12  sudo shutdown -h now
+   13  sudo leafpad /etc/default/grub
+   14  poweroff
+   15  sudo apt install lightdm
+   16  nvidia-smi\n
+   17  sudo leafpad /etc/default/grub
+   18  sudo update-grub
+   19  ^[[200~free -h~
+   20  free -h
+   21  cd /sys/devices/platform/acer-wmi
+   22  ls
+   23  cd ..
+   24  ls
+   25  sudo nautilus
+   26  sudo dmidecode -s system-manufacturer\n
+   27  sudo dmidecode -s system-product-name
+   28  find . -type f -name 'lid_resume*'\n
+   29  find . -type f -name '*lid*'
+   30  cat /proc/acpi/wakeup\n
+   31  cd
+   32  grep "contrib non-free" /etc/apt/sources.list
+   33  lspci -s 07:00.0 -v
+   34  lspci | grep -i vga
+   35  lspci -s 01:00.0 -v
+   36  sudo apt install -y nvidia-driver nvidia-cuda-toolkit
+   37  reboot
+   38  lspci -s 01:00.0 -v
+   39  shutdown
+   40  shutdown -h 
+   41  shutdown -h now
+   42  nvidia-smi\n
+   43  xinput list
+   44  dmesg
+   45  journalctl
+   46  cat /etc/X11/xorg.conf
+   47  cd /etc/X11/xorg.conf.d
+   48  ls
+   49  ls -la
+   50  cd ..
+   51  ls
+   52  ls -la
+   53  cat Xsession.options
+   54  cat XvMCConfig
+   55  cat Xwrapper.config
+   56  cat /var/log/Xorg.0.log
+   57  glxinfo | grep "OpenGL renderer"\n
+   58  lspci -s 01:00.0 -v
+   59  lspci -s 07:00.0 -v
+   60  lspci | grep -i vga
+   61  nvidia-smi\n
+   62  cat /var/log/Xorg.0.log | grep -i nvidia\n
+   63  sudo dpkg-reconfigure xserver-xorg\n
+   64  sudo nvidia-settings\n
+   65  sudo cat /etc/X11/xorg.conf.d/20-nvidia.conf\n
+   66  sudo apt install -y hashcat
+   67  hashcat -I
+   68  sudo leafpad /etc/default/grub
+   69  reboot
+   70  cat /var/log/Xorg.0.log
+   71  cc
+   72  cat /var/log/Xorg.0.log
+   73  reboot
+   74  ^[[200~modinfo nvidia -k $(uname -r)
+   75  modinfo nvidia -k $(uname -r)\n
+   76  nvidia-smi\n
+   77  modinfo nvidia -k $(uname -r)\n
+   78  dpkg -l | grep nvidia\n
+   79  lsmod | grep nvidia\n
+   80  nvidia-smi --query-gpu=driver_version --format=csv,noheader\n
+   81  uname -r\n
+   82  less /var/log/Xorg.0.log\n
+   83  cd /etc/X11/xorg.conf.d
+   84  ls
+   85  cd ..
+   86  ls
+   87  cd
+   88  cat /var/log/Xorg.0.log\n
+   89  ls /etc/modprobe.d/
+   90  cd /etc/modprobe.d
+   91  ls
+   92  cat nvidia-blacklists-nouveau.conf
+   93  sudo leafpad nvidia-blacklists-nouveau.conf
+   94  sudo update-initramfs -u\n
+   95  reboot
+   96  echo "blacklist uvcvideo" | sudo tee -a /etc/modprobe.d/blacklist.conf\nsudo update-initramfs -u\n
+   97  reboot
+   98  mokutil --sb-state\n
+   99  dmesg | grep -i 'integrity: Problem loading'\n
+  100  ls /etc/ssl/certs/\nls /etc/ssl/private/\nls /usr/share/ca-certificates/\n
+  101  ls /etc/ssl/certs/
+  102  ls /etc/ssl/private/
+  103  sudo su
+  104  sudo leafpad /etc/default/grub
+  105  sudo update-grub\n
+  106  sudo apt update\nsudo apt upgrade\n
+  107  reboot
+  108  nvidia-smi
+  109  ls
+  110  ls -la
+  111  cd ..
+  112  ls -la
+  113  cd
+  114  ls -la
+  115  history
+  116  lsblk\n}
+  117  lsblk
+  118  sudo blkid\n
+  119  ls -al ~/.ssh\n
+  120  sudo su
+  121  cd GITHUB
+  122  git pull KIVY
+  123  git config --global user.name "willandru"\ngit config --global user.email "willandru@hotmail.com"\n
+  124  git pull KIVY
+  125  git 
+  126  git pull git@github.com:willandru/KIVY.git
+  127  git clone git@github.com:willandru/KIVY.git
+  128  cd KIVY
+  129  ls
+  130  cd GALAXY_GAME
+  131  ls
+  132  cat main.py
+  133  car thelab.kv
+  134  cat thelab.kv
+  135  cat notas.txt
+  136  history
+  137  ls -al ~/.ssh\n
+  138  ls -al ~/.ssh
+  139  cd 
+  140  ls -la
+  141  sudo find / -type d -name ".ssh" 2>/dev/null\n
+  142  sudo cat /root/.ssh ~/.ssh\n
+  143  sudo la -la /root/.ssh ~/.ssh\n
+  144  sudo ls -la /root/.ssh ~/.ssh\n
+  145  sudo cp -r /root/.ssh ~/.ssh\n
+  146  ls -la
+  147  sudo chown -R kaliw:kaliw ~/.ssh\n
+  148  ls -la
+  149  cd GITHUB/KIVY/AndroidAPPs
+  150  ls
+  151  code main.py
+  152  python main.py
+  153  cd
+  154  ls
+  155  source ENVS/androidApp
+  156  source ENVS/androidApp/bin/activate
+  157  clear
+  158  cd GITHUB/KIVY/AndroidAPPs
+  159  python main.py
+  160  buildozer init
+  161  ls
+  162  cat buildozer.spec
+  163  buildozer -v android debug\n
+  164  pip install cython\n
+  165  buildozer -v android debug\n
+  166  poweroff
+  167  sudo apt update\nsudo apt install default-jdk\n
+  168  cd GITHUB
+  169  git clone git@github.com:willandru/EPIDEMIOLOGY.git
+  170  cd EPIDEMIOLOGY
+  171  ls
+  172  df -h
+  173  lsblk
+  174  763M   1% /run
+  175  /dev/nvme0n1p6   83G   27G   52G  35% /
+  176  tmpfs           3.8G     0  3.8G   0% /dev/shm
+  177  tmpfs           5.0M     0  5.0M   0% /run/lock
+  178  efivarfs        268K  243K   21K  93% /sys/firmware/efi/efivars
+  179  /dev/nvme0n1p1  256M   55M  202M  22% /boot/efi
+  180  tmpfs           765M  2.5M  762M   1% /run/user/1000
+  181  cd GITHUB/KIVY/AndroidAPPs
+  182  ls
+  183  cd bin
+  184  ls
+  185  ls -la
+  186  cd ..
+  187  rm bin
+  188  rm -rd bin
+  189  ls
+  190  buildozer -v android debug\n
+  191  source ENVS/androidApp/bin/activate
+  192  source ~/ENVS/androidApp/bin/activate
+  193  buildozer -v android debug\n
+  194  autoupdate
+  195  autoreconf -i
+  196  ls
+  197  open .
+  198  buildozer -v android debug\n
+  199  buildozer -v android clean
+  200  buildozer -v android debug
+  201  ping github.com\n
+  202  buildozer -v android clean
+  203  buildozer -v android debug
+  204  pip install --upgrade kivy cython\n
+  205  cythonize -b -i _img_sdl2.pyx
+  206  cd ~/GITHUB/KIVY/AndroidAPPs\n
+  207  cythonize -b -i _img_sdl2.pyx\n
+  208  ls
+  209  cd bin
+  210  ls
+  211  cd ..
+  212  buildozer -v android clean
+  213  buildozer -v android debug
+  214  buildozer -v android clean
+  215  buildozer -v android debug
+  216  git clone git@github.com:willandru/SLAM.git
+  217  cd ..
+  218  ls
+  219  cd  kaliw
+  220  ls
+  221  rm -rd SLAM
+  222  ls
+  223  open .
+  224  cd  GITHUB
+  225  git clone git@github.com:willandru/SLAM.git
+  226  cd SLAM
+  227  open .
+  228  cd
+  229  cd Downloads
+  230  ls
+  231  cd ni-labview-2023-community-23.3.1
+  232  ls
+  233  sudo dpkg -i ni-labview-2023-community_23.3.1.49157-0+f5-ubuntu2204_all.deb
+  234  cd /usr/local/natinst/LabVIEW-2023\nls\n
+  235  which labview\n
+  236  sudo find / -name labview -type f\n
+  237  sudo su
+  238  labview
+  239  ni-labview
+  240  cd /opt
+  241  ls
+  242  sudo find / -type f -executable -name 'labview*' 2>/dev/null\n
+  243  cd
+  244  cd /usr
+  245  ls
+  246  cd bin
+  247  ls
+  248  cd ..
+  249  ls
+  250  cd local
+  251  cd bin
+  252  ls
+  253  cd ..
+  254  ^H
+  255  ni-labview-2023-jammy-community 
+  256  sudo dpkg -r ni-labview-2023-jammy-community\n
+  257  sudo dpkg --purge ni-labview-2023-jammy-community\n
+  258  dpkg -l | grep labview\n
+  259  cd
+  260  cd Downloads
+  261  ls
+  262  cd ni-labview-2023-community-23.3.1
+  263  ls
+  264  sudo dpkg -i ni-labview-2023-community_23.3.1.49157-0+f5-ubuntu2204_all.deb
+  265  cd 
+  266  cd /usr/local
+  267  ls
+  268  cd
+  269  sudo dpkg -r ni-labview-2023-jammy-community\n
+  270  sudo dpkg --purge ni-labview-2023-jammy-community\n
+  271  clear
+  272  sudo apt-get install autoconf
+  273  sudo apt-get update && sudo apt-get install autoconf
+  274  sudo apt-get update\nsudo apt-get install autotools-dev\n
+  275  sudo apt-get update\nsudo apt-get install autoconf automake\n
+  276  sudo apt-get install libtool m4\n
+  277  sudo apt-get install libssl-dev\n
+  278  source ~/ENVS/androidApp/bin/activate
+  279  pip install --upgrade cython\npip install --upgrade kivy\n
+  280  buildozer -v android clean
+  281  buildozer -v android debug
+  282  iwconfig
+  283  lsblk
+  284  fdisk -l
+  285  sudo fdisk -l
+  286  partprobe
+  287  sudo partprobe
+  288  sudo fdisk -l
+  289  lsblk
+  290  sudo gparted\n
+  291  cd GITHUB
+  292  git clone git@github.com:willandru/KALI.git
+  293  cd KALI
+  294  history
