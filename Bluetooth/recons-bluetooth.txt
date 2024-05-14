@@ -1,0 +1,5 @@
+hciconfig
+lsusb
+hcitool scan
+sdptool browse 80:47:86:66:DE:81
+hcitool scan 
